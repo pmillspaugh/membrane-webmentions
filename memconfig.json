@@ -1,0 +1,70 @@
+{
+  "schema": {
+    "types": [
+      {
+        "name": "Root",
+        "actions": [
+          {
+            "name": "poll",
+            "type": "Void"
+          },
+          {
+            "name": "configure",
+            "type": "Void",
+            "params": [
+              {
+                "name": "query",
+                "type": "String"
+              },
+              {
+                "name": "webmentionsIoToken",
+                "type": "String"
+              },
+              {
+                "name": "twitterApiV2BearerToken",
+                "type": "String",
+                "optional": true
+              },
+              {
+                "name": "twitterPrivateApiBearerToken",
+                "type": "String",
+                "optional": true
+              },
+              {
+                "name": "twitterPrivateApiAuthToken",
+                "type": "String",
+                "optional": true
+              },
+              {
+                "name": "twitterPrivateApiCsrfToken",
+                "type": "String",
+                "optional": true
+              },
+              {
+                "name": "twitterPrivateApiSearchQueryId",
+                "type": "String",
+                "optional": true
+              }
+            ]
+          }
+        ],
+        "fields": [
+          {
+            "name": "status",
+            "type": "String"
+          }
+        ],
+        "events": [
+          {
+            "name": "statusChanged",
+            "type": "Void"
+          }
+        ]
+      }
+    ]
+  },
+  "dependencies": {
+    "http": "http:",
+    "email": "email:"
+  }
+}
